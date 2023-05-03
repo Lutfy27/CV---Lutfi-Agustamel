@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutfi Agustamel</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="script/Chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h1><a href="#">Lutfi Agustamel</a></h1>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#pdd">Pendidikan</a></li>
+                <li><a href="#exp">Pengalaman</a></li>
+                <li><a href="#skill">Kemampuan</a></li>
+                <li><a href="#hobi">Hobi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="about" class="card">
+                <h2><span>Tentang Saya</span></h2>
+                <p><span class="ketik"></span></p>
+            </article>
+            <article id="exp" class="card">
+                <h2><span>Pengalaman</span></h2>
+                <br>
+                <h3>
+                    <li>2021 | (Magang) Kantor Imigrasi Kelas I TPI - Pekanbaru </li>
+                </h3>
+                <h4>Membantu melakukan pelaksanaan dan pelaporan di bidang
+                    pemanfaatan, pemeliharaan, dan pengamanan sistem dan
+                    teknologi informasi keimigrasian.</h4><br>
+                <h3>
+            </article>
+            <article id="pdd" class="card">
+                <h2><span>Pendidikan</span></h2>
+                <br>
+                <h3>
+                    <li>2018-2022 | S1 SISTEM INFORMASI UNIVERSITAS RIAU</li>
+                </h3><br>
+                <h3>
+                    <li>2015-2018 | SMAN 5 PEKANBARU</li>
+                </h3><br>
+                <h3>
+                    <li>2015-2017 | LBPP LIA</li>
+                </h3><br>
+                <h3>
+                    <li>2012-2015 | SMPN 17 PEKANBARU</li>
+                </h3><br>
+                <h3>
+                    <li>2006-2012 | SDN 114 PEKANBARU</li>
+                </h3><br>
+            </article>
+            <article id="skill" class="card">
+                <h2><span>Kemampuan</span></h2>
+                <br>
+                <canvas id="myChart"></canvas>
+                <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ["CSS", "HTML", "JavaScript", "Vuejs", "Laravel", "Python", "Microsoft Office", "Photoshop", "Premiere Pro"],
+                            datasets: [{
+                                data: [60, 75, 50, 45, 45, 70, 80, 40, 35],
+                                backgroundColor: [
+                                    'rgb(106, 44, 112)',
+                                    'rgb(240, 138, 93)',
+                                    'rgb(152, 216, 170)',
+                                    'rgb(243, 233, 159)',
+                                    'rgb(247, 208, 96)',
+                                    'rgb(255, 109, 96)',
+                                    'rgb(20, 108, 148)',
+                                    'rgb(97, 122, 85)',
+                                    'rgb(169, 144, 126)'
+
+                                ],
+                                // borderColor: [
+                                //     'rgba(0,100,0,1)',
+                                //     'rgba(139,0,0,1)',
+                                //     'rgba(0,0,128,1)',
+                                //     'rgb(152, 216, 170)',
+                                // ],
+                                borderWidth: 0
+                            }]
+                        },
+                        options: {
+
+                        }
+                    });
+                </script>
+            </article>
+
+        </div>
+
+
+        <aside>
+            <article id="profil" class="card">
+                <h2> <span>Profil</span> </h2>
+                <figure>
+                    <img src="images/Lutfy.png" style="width:200px;height:200;">
+                    <h3>Lutfi Agustamel</h3>
+                    <figcaption>27 Agustus 1999</figcaption>
+                    <figcaption>Kota Pekanbaru, Riau</figcaption>
+                </figure>
+            </article>
+            <article id="kontak" class="card">
+                <h2> <span>Kontak</span> </h2>
+                <figure>
+                    <br>
+                    <h3><a href="https://www.linkedin.com/in/lutfi-agustamel-121526224/" target="_blank"><img
+                                src="images/linkedin.png" style="width:25px;height:25;"></a></h3>
+                    <h3><a href="https://www.linkedin.com/in/lutfi-agustamel-121526224/" target="_blank">Lutfi
+                            Agustamel</a></h3>
+                    <br>
+                    <h3><a href="https://web.facebook.com/lutfi.agustamel" target="_blank"><img
+                                src="images/facebook.png" style="width:25px;height:25;"></a></h3>
+                    <h3><a href="https://web.facebook.com/lutfi.agustamel" target="_blank">Lutfi Agustamel</a></h3>
+                    <br>
+                    <h3><a href="https://mail.google.com/mail/u/0/" target="_blank"><img src="images/email.png"
+                                style="width:25px;height:25;"></a></h3>
+                    <h3><a href="https://mail.google.com/mail/u/0/" target="_blank">Lutfi Agustamel</a></h3>
+                </figure>
+            </article>
+            <article id="hobi" class="card">
+                <h2> <span>Hobi</span> </h2>
+                <figure>
+                    <br>
+                    <figcaption><img src="images/football.png" style="width:60px;height:60;"><img
+                            src="images/guitar.png" style="width:60px;height:60;"><img src="images/chess.png"
+                            style="width:60px;height:60;"></figcaption>
+                </figure>
+            </article>
+        </aside>
+    </main>
+    </main>
+    <footer>
+        <div class="footer">
+            <small>Copyright &copy; 2022 - Lutfi Agustamel</a></small>
+        </div>
+    </footer>
+    <script src="script/Script.js"></script>
+</body>
+
+</html>
